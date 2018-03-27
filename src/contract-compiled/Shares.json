@@ -1,0 +1,40 @@
+{
+  "contract_name": "Shares",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "share",
+          "type": "uint256"
+        }
+      ],
+      "name": "updateShares",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "addr",
+          "type": "address"
+        }
+      ],
+      "name": "getShares",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    }
+  ],
+  "unlinked_binary": "0x606060405234610000575b60d6806100186000396000f300606060405263ffffffff60e060020a600035041663b66084678114602c578063f04da65b14603b575b6000565b3460005760396004356063565b005b346000576051600160a060020a0360043516608b565b60408051918252519081900360200190f35b80606b33608b565b600160a060020a0333166000908152602081905260409020910190555b50565b600160a060020a0381166000908152602081905260409020545b9190505600a165627a7a7230582060903712a857ea31bf3e637e124275cfa4d31e3e0a84c19547ed362148142efa0029",
+  "networks": {},
+  "schema_version": "0.0.5",
+  "updated_at": 1492197829550
+}
