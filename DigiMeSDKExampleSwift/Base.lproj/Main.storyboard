@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="x7A-dh-Za3">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--DigiPort-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DigiMeSDKExampleSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vcb-R8-fKv" customClass="FlatButton" customModule="SwiftyButton">
+                                <rect key="frame" x="16" y="501" width="343" height="59"/>
+                                <color key="backgroundColor" red="1" green="0.65849664931680807" blue="0.49145760245832448" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="59" id="3xY-SJ-Zyd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <state key="normal" title="Connect to DigiMe">
+                                    <color key="titleColor" red="0.4186787703" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="digiMeConnect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pId-Hz-1MJ"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="09E-Hk-REC">
+                                <rect key="frame" x="111" y="322" width="152" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="AcZ-Wd-UFl"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content=" Place Holder">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gEs-hE-Tmf">
+                                <rect key="frame" x="111" y="363" width="152" height="46"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="00/00/0000">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yo0-cX-aHE">
+                                <rect key="frame" x="111" y="409" width="152" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="VES-dO-Ipk"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="New York, NY">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0um-BW-8kQ">
+                                <rect key="frame" x="123" y="186" width="128" height="128"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="digiport" translatesAutoresizingMaskIntoConstraints="NO" id="yey-9Z-Nfr">
+                                <rect key="frame" x="67" y="28" width="240" height="141"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.41867877028322198" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vcb-R8-fKv" secondAttribute="bottom" constant="43" id="77S-Ou-oLA"/>
+                            <constraint firstItem="Yo0-cX-aHE" firstAttribute="centerX" secondItem="vcb-R8-fKv" secondAttribute="centerX" id="Cic-oH-a1c"/>
+                            <constraint firstItem="yey-9Z-Nfr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="Ex5-mv-uWl"/>
+                            <constraint firstItem="vcb-R8-fKv" firstAttribute="top" secondItem="Yo0-cX-aHE" secondAttribute="bottom" constant="46" id="L2x-cX-psa"/>
+                            <constraint firstItem="0um-BW-8kQ" firstAttribute="centerX" secondItem="09E-Hk-REC" secondAttribute="centerX" id="L7P-JQ-Rch"/>
+                            <constraint firstItem="0um-BW-8kQ" firstAttribute="top" secondItem="yey-9Z-Nfr" secondAttribute="bottom" constant="17" id="LqV-Gg-2DW"/>
+                            <constraint firstItem="09E-Hk-REC" firstAttribute="trailing" secondItem="gEs-hE-Tmf" secondAttribute="trailing" id="Qlh-4o-agz"/>
+                            <constraint firstItem="vcb-R8-fKv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Uwz-g1-rzz"/>
+                            <constraint firstItem="gEs-hE-Tmf" firstAttribute="leading" secondItem="Yo0-cX-aHE" secondAttribute="leading" id="Wcq-lb-bhd"/>
+                            <constraint firstItem="09E-Hk-REC" firstAttribute="leading" secondItem="gEs-hE-Tmf" secondAttribute="leading" id="X44-1V-OiU"/>
+                            <constraint firstItem="09E-Hk-REC" firstAttribute="top" secondItem="0um-BW-8kQ" secondAttribute="bottom" constant="8" symbolic="YES" id="XFa-lX-ZC4"/>
+                            <constraint firstItem="Yo0-cX-aHE" firstAttribute="top" secondItem="09E-Hk-REC" secondAttribute="bottom" constant="41" id="XIS-1F-OID"/>
+                            <constraint firstItem="Yo0-cX-aHE" firstAttribute="top" secondItem="gEs-hE-Tmf" secondAttribute="bottom" id="kX3-Jy-EoZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vcb-R8-fKv" secondAttribute="trailing" constant="16" id="kwh-yZ-Pm0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yey-9Z-Nfr" secondAttribute="trailing" constant="68" id="pyo-Dp-8yx"/>
+                            <constraint firstItem="yey-9Z-Nfr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="28" id="rQu-QU-4k2"/>
+                            <constraint firstItem="0um-BW-8kQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="123" id="tCv-qU-xo1"/>
+                            <constraint firstItem="09E-Hk-REC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="111" id="vYb-Ra-PZm"/>
+                            <constraint firstItem="gEs-hE-Tmf" firstAttribute="top" secondItem="0um-BW-8kQ" secondAttribute="bottom" constant="49" id="ve1-0h-C1B"/>
+                            <constraint firstItem="gEs-hE-Tmf" firstAttribute="trailing" secondItem="Yo0-cX-aHE" secondAttribute="trailing" id="zfd-FH-xT9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="DigiPort" id="3La-Ob-pvh"/>
+                    <connections>
+                        <outlet property="cityLabel" destination="Yo0-cX-aHE" id="AWp-qu-04U"/>
+                        <outlet property="dateLabel" destination="gEs-hE-Tmf" id="c2U-As-uee"/>
+                        <outlet property="nameLabel" destination="09E-Hk-REC" id="nAI-9M-ARL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="476" y="132.68365817091455"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="B1v-mu-VQF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="x7A-dh-Za3" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="XFs-KN-o82">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.4186787703" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="R67-Gg-Wes"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FuE-sm-Sn3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-511" y="133"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="digiport" width="386" height="141"/>
+    </resources>
+</document>
